@@ -1,0 +1,39 @@
+// Dropmenu
+.dropmenu-wrap {
+  position: relative;
+  &:focus-within {
+    .dropmenu {
+      visibility: visible;
+      opacity: 1;
+      box-shadow: 0 0 27px -7px #00000012;
+    }
+  }
+}
+.dropmenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: $tr_time;
+  background-color: $dropmenu_bg;
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.drop {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 176px;
+  z-index: 10;
+}
+.dropitem {
+  transition: $tr_time;
+  &:hover,
+  &:focus-within {
+    background: hsla(215, 46%, 95%, 0.6);
+    backdrop-filter: blur(54.3656px);
+  }
+}
+.droplink {
+  width: 100%;
+  justify-content: center;
+}

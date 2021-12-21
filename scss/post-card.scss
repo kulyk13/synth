@@ -1,0 +1,62 @@
+// Post card
+.post-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 374px;
+  min-height: 280px;
+  background-color: $post_card_bg;
+  border-radius: 8px;
+  padding: 14px 24px;
+  line-height: 1.2;
+  &__link {
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    column-gap: 4px;
+    & ~ .post-card__text {
+      margin-top: 0;
+    }
+    &-hash {
+      background-color: #ecf1f8;
+      border-radius: 6px;
+      margin-right: -10px;
+    }
+  }
+  &__text {
+    @include font("Montserrat", 400, 36px);
+    margin-bottom: 32px;
+    margin-top: 46px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    font-size: 14px;
+  }
+  &__author {
+    column-gap: 8px;
+    align-items: center;
+    margin-left: -10px;
+  }
+  &__img {
+    border-radius: 50%;
+    background-color: #b2b3bb;
+  }
+  &__share {
+    margin-right: -10px;
+    font-size: 18px;
+    color: $brand_color;
+    font-weight: 400;
+  }
+  &__activity {
+    display: flex;
+    column-gap: 16px;
+    &-item {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
+}

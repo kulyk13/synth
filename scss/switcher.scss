@@ -1,0 +1,53 @@
+// Switcher
+.switcher {
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    font-size: 0;
+    &:focus-within {
+      outline: 2px solid $text_color;
+      border-radius: 30px;
+    }
+  }
+  &__checkbox {
+    // display: none;
+    appearance: none;
+    &:checked + .switcher__slider {
+      background-color: $brand_color2;
+      &::before {
+        transform: translateX(15px);
+      }
+    }
+    &:focus + .switcher__slider {
+      box-shadow: 0 0 1px $brand_color2;
+    }
+  }
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $brand_color2;
+    transition: $tr_time;
+    &.round {
+      border-radius: 30px;
+      &::before {
+        border-radius: 50%;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 3px;
+      background-color: $page_bg;
+      transition: $tr_time;
+    }
+  }
+}

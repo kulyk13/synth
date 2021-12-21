@@ -1,0 +1,75 @@
+// User
+.user {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  line-height: 1.25;
+  @include font("Open Sans", 400, 16px);
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+    margin-bottom: 32px;
+  }
+  &__img {
+    border-radius: 50%;
+  }
+  &__desc {
+    max-width: 145px;
+    margin-left: 24px;
+  }
+  &__name {
+    @include font("Montserrat", 600, 24px);
+    margin-bottom: 8px;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+  &__nickname {
+    margin-bottom: 6px;
+  }
+  &__edit-btn {
+    color: $brand_color;
+    padding-left: 30px;
+    background-image: url(../img/pencil.svg);
+    background-repeat: no-repeat;
+    background-position: 0 47%;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  &__menu-img {
+    object-fit: contain;
+  }
+  &__menu-btn {
+    margin-left: 15px;
+  }
+  &__menu {
+    top: 45px;
+    right: -137px;
+    font-weight: 600;
+    &-link {
+      column-gap: 16px;
+      align-items: center;
+    }
+  }
+  &__stats {
+    display: flex;
+    column-gap: 58px;
+    margin-bottom: 24px;
+    &-item {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-title {
+      line-height: 1.5;
+    }
+    &-value {
+      line-height: 1.33;
+      @include font("Open Sans", 700, 18px);
+    }
+  }
+  &__summary {
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+  }
+}
