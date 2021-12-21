@@ -91,3 +91,24 @@
   justify-content: space-between;
 }
 /* ----- HERO END ----- */
+/* ----- MAIN CONTENT START ----- */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  padding-bottom: 200px;
+  margin-left: 47px;
+}
+.privacy-switcher {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  margin-bottom: 62px;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  //   justify-content: space-between;
+  gap: 24px;
+}
+/* ----- MAIN CONTENT END ----- */
