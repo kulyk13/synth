@@ -977,4 +977,35 @@ a {
             column-gap: 6px;
   }
 }
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .privacy-switcher {
+    margin-left: auto;
+    margin-bottom: 42px;
+  }
+
+  .posts {
+    gap: 24px;
+  }
+
+  .post-card {
+    max-width: 100%;
+  }
+  .post-card__text {
+    font-size: 36px;
+  }
+  .post-card__author {
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+  .post-card__activity {
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+  }
+}
 /* ----- ADAPTIVE END -----*/
