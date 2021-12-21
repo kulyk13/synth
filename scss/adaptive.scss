@@ -117,4 +117,41 @@
     width: 374px;
   }
 }
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+  .user {
+    max-width: 290px;
+    &__desc {
+      margin-left: 15px;
+    }
+    &__name {
+      font-size: 22px;
+    }
+    &__menu {
+      right: 15px;
+      &-btn {
+        margin-left: 0;
+        margin-top: -7px;
+      }
+    }
+    &__stats {
+      column-gap: 48px;
+    }
+  }
+  .post-card {
+    max-width: 290px;
+    &__text {
+      font-size: 30px;
+    }
+    &__author {
+      column-gap: 6px;
+    }
+    &__activity {
+      column-gap: 9px;
+    }
+  }
+}
 /* ----- ADAPTIVE END -----*/
