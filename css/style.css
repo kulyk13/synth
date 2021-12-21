@@ -781,3 +781,113 @@ a {
 }
 
 /* ----- COMMON STYLES END ----- */
+/* ----- HEADER START ----- */
+.header {
+  padding-top: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+}
+.header__nav {
+  position: relative;
+}
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__add-btn {
+  font-size: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #ff974f 0%, #e32c75 100%);
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  bottom: -32px;
+  right: 15px;
+  z-index: 10;
+}
+.header__add-btn::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  left: calc(50% - 1px);
+  z-index: 10;
+  background-color: #fff;
+}
+.header__add-btn::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: calc(50% - 1px);
+  left: calc(50% - 10px);
+  z-index: 10;
+  background-color: #fff;
+}
+.header__add-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.profile__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile__user-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  font-weight: 400;
+}
+.profile__user-pic {
+  border-radius: 30px;
+}
+.profile__user-btn {
+  opacity: 0.4;
+}
+.profile__user-btn:hover, .profile__user-btn:focus-within {
+  opacity: 1;
+}
+.profile__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+  margin-right: -10px;
+}
+
+/* ----- HEADER END ----- */
