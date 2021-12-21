@@ -940,3 +940,41 @@ a {
 }
 
 /* ----- MAIN CONTENT END ----- */
+/* ----- ADAPTIVE START -----*/
+@media (max-width: 1399.98px) {
+  .main-content {
+    width: 67%;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 990px;
+  }
+
+  .main-content {
+    margin-left: 16px;
+  }
+
+  .posts {
+    gap: 9px;
+  }
+
+  .post-card {
+    max-width: 285px;
+  }
+  .post-card__text {
+    font-size: 30px;
+  }
+  .post-card__author {
+    -webkit-column-gap: 4px;
+       -moz-column-gap: 4px;
+            column-gap: 4px;
+  }
+  .post-card__activity {
+    -webkit-column-gap: 6px;
+       -moz-column-gap: 6px;
+            column-gap: 6px;
+  }
+}
+/* ----- ADAPTIVE END -----*/

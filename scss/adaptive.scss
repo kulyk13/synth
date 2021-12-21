@@ -1,0 +1,34 @@
+@import "variables.scss";
+/* ----- ADAPTIVE START -----*/
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+  .main-content {
+    width: 67%;
+    margin-left: 30px;
+  }
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 990px;
+  }
+  .main-content {
+    margin-left: 16px;
+  }
+  .posts {
+    gap: 9px;
+  }
+  .post-card {
+    max-width: 285px;
+    &__text {
+      font-size: 30px;
+    }
+    &__author {
+      column-gap: 4px;
+    }
+    &__activity {
+      column-gap: 6px;
+    }
+  }
+}
+/* ----- ADAPTIVE END -----*/
