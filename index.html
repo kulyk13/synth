@@ -17,7 +17,84 @@
 
 <body>
     <header class="header">
-
+        <nav class="nav header__nav container">
+            <div class="header__top">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" alt="Synth" class="logo__img" width="50" height="23">
+                </a>
+                <div class="profile">
+                    <ul class="profile__user">
+                        <li class="profile__user-item">
+                            <a href="#" class="profile__user-link">
+                                <p class="profile__user-name">Arthur Wood</p>
+                                <img src="img/account.webp" alt="account image" width="32" height="32"
+                                    class="profile__user-pic">
+                            </a>
+                        </li>
+                        <li class="profile__user-item dropmenu-wrap">
+                            <button aria-label="dropmenu" class="profile__user-btn">
+                                <svg width="10" height="6" viewbox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="#3E4056" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <ul class="profile__user-dropmenu dropmenu drop">
+                                <li class="profile__user-dropitem dropitem">
+                                    <a href="#" class="profile__user-droplink droplink dropitem">My Profile</a>
+                                </li>
+                                <li class="profile__user-dropitem dropitem">
+                                    <a href="#" class="profile__user-droplink droplink">Posts</a>
+                                </li>
+                                <li class="profile__user-dropitem dropitem">
+                                    <a href="#" class="profile__user-droplink droplink">Liked</a>
+                                </li>
+                                <li class="profile__user-dropitem dropitem">
+                                    <a href="#" class="profile__user-droplink droplink">Saved</a>
+                                </li>
+                                <li class="profile__user-dropitem dropitem">
+                                    <a href="#" class="profile__user-droplink droplink">Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="profile__actions">
+                        <li class="profile__actions-item">
+                            <button class="profile__actions-link" type="button" aria-label="notifications">
+                                <img src="img/bell.svg" alt="notifications" width="14" height="16"
+                                    class="profile__actions-pic">
+                            </button>
+                        </li>
+                        <li class="profile__actions-item">
+                            <a href="#" class="profile__actions-link" aria-label="gifts">
+                                <img src="img/gift.svg" alt="gifts" width="16" height="17" class="profile__actions-pic">
+                            </a>
+                        </li>
+                        <li class="profile__actions-item">
+                            <a href="#" class="profile__actions-link" aria-label="letter M">
+                                <img src="img/shapeM.svg" alt="letter M" width="16" height="13"
+                                    class="profile__actions-pic">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <ul class="tabs nav__tabs header__nav-tabs js-all-tabs">
+                    <li class="tabs__item">
+                        <button class="tabs__link tabs__link--active js-tab" id="feedTab" type="button">Feed</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__link js-tab" id="exploreTab" type="button">Explore</button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="tabs__link js-tab" id="discussTab" type="button">Discussions</button>
+                    </li>
+                </ul>
+                <button id="addPostBtn" type="button" class="header__add-btn">
+                    Add post
+                </button>
+            </div>
+        </nav>
     </header>
 
     <main id="heroContent" class="main">
